@@ -1,4 +1,6 @@
 // Soal 1
+console.log('----------------SOAL 1----------------');
+
 const arraySatu = [1, 2, 3, 4];
 const arrayDua = [5, 6, 7, 8];
 const arrayTiga = [9, 10, 11, 12];
@@ -27,6 +29,8 @@ console.log(mergedArray2);
 // Namun dalam konteks code yang lebih readable, menurut saya spread lebih baik dari concat.
 
 // Soal 2
+console.log('----------------SOAL 2----------------');
+
 const objectBebas = {
   aspal: 'hitam',
   roket: 'meluncur',
@@ -38,3 +42,34 @@ const objectBebas = {
 const { aspal: a, roket: r, joker: j, unta: u, ninja: n } = objectBebas;
 
 console.log(a, r, j, u, n);
+
+// soal 3
+console.log('----------------SOAL 3----------------');
+
+const unfilteredArray = [
+  {
+    name: 'Bejo',
+    isAllowed: true
+  },
+  {
+    name: 'Jhonson',
+    isAllowed: false
+  },
+  {
+    name: 'Juara',
+    isAllowed: true
+  },
+  {
+    name: 'Panco',
+    isAllowed: false
+  },
+  {
+    name: 'Nasional',
+    isAllowed: true
+  }
+];
+
+const bejoJuaraNasional = unfilteredArray.filter(x => x.isAllowed === true);
+
+console.log(bejoJuaraNasional);
+console.log(bejoJuaraNasional.map(x => x.name));
