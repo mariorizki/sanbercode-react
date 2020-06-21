@@ -1,0 +1,3 @@
+const helloAlert = () => {
+  alert('Hello');
+};

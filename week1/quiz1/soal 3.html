@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="form">
+      Nama: <input id="nama" type="text" name="nama" value="nama" /><br />
+
+      Alamat:
+      <input id="alamat" type="text" name="alamat" value="alamat" /><br />
+
+      Pekerjaan:
+      <input
+        id="pekerjaan"
+        type="text"
+        name="pekerjaan"
+        value="pekerjaan"
+      /><br />
+
+      Gaji: <input id="gaji" type="number" name="gaji" value="0" /><br />
+
+      Tahun masuk: <input id="tahunMasuk" type="date" /><br />
+
+      <input type="button" value="Submit" onclick="getData()" />
+    </form>
+
+    <script>
+      const getData = () => {
+        let nama = document.getElementById('nama').value;
+        let alamat = document.getElementById('alamat').value;
+        let pekerjaan = document.getElementById('pekerjaan').value;
+        let gaji = document.getElementById('gaji').value;
+        let tahunMasuk = document.getElementById('tahunMasuk').value;
+
+        const data = {
+          nama: nama,
+          alamat: alamat,
+          pekerjaan: pekerjaan,
+          gaji: gaji,
+          tahunMasuk: tahunMasuk
+        };
+
+        console.log(JSON.stringify(data));
+      };
+    </script>
+  </body>
+</html>
