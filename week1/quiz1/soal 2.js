@@ -40,3 +40,5 @@ const cars = [
     tahunProduksi: 2008
   }
 ];
+
+console.log(cars);
