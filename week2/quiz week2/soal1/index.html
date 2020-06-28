@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Hello World</title>
+    <link rel="icon" type="image/png" href="react.png" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"
+      charset="utf-8"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"
+      charset="utf-8"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"
+      charset="utf-8"
+    ></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      ReactDOM.render(
+        <div>
+          <form>
+            <label>Nama : </label>
+            <input name="nama" type="text" />
+            <br />
+
+            <label>Jabatan : </label>
+            <input name="jabatan" type="text" />
+            <br />
+
+            <label>Jumlah cuti : </label>
+            <input name="jumlah cuti" type="number" />
+            <br />
+
+            <label>Mulai cuti : </label>
+            <input name="Mulai cuti" type="date" />
+            <br />
+
+            <label>Akhir cuti : </label>
+            <input name="akhir cuti" type="date" />
+            <br />
+          </form>
+        </div>,
+        document.getElementById('root')
+      );
+    </script>
+  </body>
+</html>
